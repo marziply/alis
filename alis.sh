@@ -1901,6 +1901,9 @@ function main() {
     load_globals
 
     execute_step "configuration_install" "${STEPS}"
+
+    source ./setup.sh
+
     execute_step "sanitize_variables" "${STEPS}"
     execute_step "check_variables" "${STEPS}"
     execute_step "warning" "${STEPS}"
@@ -1930,6 +1933,9 @@ function main() {
         execute_step "desktop_environment" "${STEPS}"
     fi
     execute_step "packages" "${STEPS}"
+
+    source ./packages.sh
+
     if [ "$VAGRANT" == "true" ]; then
         execute_step "vagrant" "${STEPS}"
     fi

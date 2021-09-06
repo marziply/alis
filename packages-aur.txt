@@ -1,0 +1,7 @@
+ulauncher
+brave-bin
+spotify
+nvm
+pgcli
+qrcp
+oh-my-zsh-git
