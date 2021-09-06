@@ -33,3 +33,4 @@ man-pages
 redis
 yubikey-manager
 yubikey-personalization
+yubikey-full-disk-encryption
